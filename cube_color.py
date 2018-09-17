@@ -13,29 +13,31 @@ def flip_left(i):  # towards the left
 import itertools
 
 everything = list(itertools.permutations(range(1, 7)))
+# everything = list(itertools.product([0, 1], repeat=6))
 
+n1 = n2 = n3 = 0
 
 def check(li):
     li = list(li)
     for i in range(4):
-        li = rotate(li)
-        if li in res:
-            return False
-    for i in range(4):
         li = flip_back(li)
         if li in res:
+            print('flip_back')
             return False
         for i in range(4):
             li = rotate(li)
             if li in res:
+                print('flip_back')
                 return False
     for i in range(4):
         li = flip_left(li)
         if li in res:
+            print('flip_left')
             return False
         for i in range(4):
             li = rotate(li)
             if li in res:
+                print('flip_back')
                 return False
     return True
 
