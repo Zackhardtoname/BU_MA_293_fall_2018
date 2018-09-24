@@ -28,7 +28,7 @@ maximum score'''
 
         score_indices = [i for i in range(len(scores)) if scores[i] == max_score]
 
-        choices = [1, 5, 10]
+        choices = Board.choices
 
         return choices[score_indices[0]]
 

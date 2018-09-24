@@ -4,10 +4,14 @@
 # A Connect Four Board class
 #
 
+
 class Board:
+    choices = [1, 5, 10]
+    goal = 20
+
     def __init__(self):
         self.pile = 0
-        self.choices = [1, 5, 10]
+        self.choices = Board.choices
         self.last_player = 0
         self.history = []
 
@@ -35,7 +39,7 @@ col of the called Board object. If the column is empty, then the method should d
         '''accepts a parameter checker that is
     either 'X' or 'O', and returns True if there are four consecutive slots containing checker
     on the board. Otherwise, it should return False.'''
-        return (self.pile >= 100 and self.last_player == player)
+        return (self.pile >= Board.goal and self.last_player == player)
 
             
                 

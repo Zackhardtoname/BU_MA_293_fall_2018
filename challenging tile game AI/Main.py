@@ -1,5 +1,5 @@
 #
-# main.py  (Problem Set 10, Problem 3)
+# Main.py  (Problem Set 10, Problem 3)
 #
 # Playing the game 
 #   
