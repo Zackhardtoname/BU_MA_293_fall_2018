@@ -7,7 +7,7 @@
 
 class Board:
     choices = [1, 5, 10]
-    goal = 20
+    goal = 100
 
     def __init__(self):
         self.pile = 0

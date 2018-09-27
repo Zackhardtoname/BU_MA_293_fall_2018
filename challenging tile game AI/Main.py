@@ -54,5 +54,5 @@ specified player on the specified board.'''
 player = Player(0)
 aiPlayer = AIPlayer(1, 10)
 
-board = connect_four(AIPlayer(0, 10), aiPlayer)
+board = connect_four(player, aiPlayer)
 print(board)
